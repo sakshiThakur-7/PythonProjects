@@ -1,0 +1,37 @@
+import time
+print("--------CALCULATOR---------")
+time.sleep(2)
+
+print("---------------------------")
+a=int(input("enter 1st digit -> "))
+b=int(input("enter 2nd digit -> "))
+print("---------------------------")
+print("select operator -> \n\t1.addition \n\t2.subtract \n\t3.multiplication \n\t4.division \n\t5.modulas")
+print("---------------------------")
+user=int(input("enter operator number = "))
+
+
+
+def sum():
+    print(a," + ",b," = ",a+b)
+def subtract():
+    print(a," - ",b," = ",a-b)
+def mul():
+    print(a," * ",b," = ",a*b)
+def divide():
+    print(a," / ",b," = ",a/b)
+def modulas():
+    print(a," % ",b," = ",a%b)
+
+if user == 1:
+    sum()
+elif user == 2:
+    subtract()
+elif user == 3:
+    mul()
+elif user == 4:
+    divide()
+elif user == 5:
+    modulas()
+else:
+    print("invalid option you enter try again !!!")
